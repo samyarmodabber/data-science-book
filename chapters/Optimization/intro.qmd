@@ -1,0 +1,21 @@
+# Introduction
+
+## Probability of a Conjunction of Two Events
+
+The probability of the conjunction (intersection) of two independent events $A$ and $B$ can be calculated using the formula:
+
+$$ \text{Probability} (A \text{ and } B) = \text{Probability} (A) \times \text{Probability} (B) $$
+
+This formula assumes that events $ A $ and $ B $ are independent, meaning the occurrence of one event does not affect the occurrence of the other.
+
+For example, if you want to find the probability of rolling a 3 on a fair six-sided die (Event $ A $) **and** flipping heads on a fair coin (Event $ B $), and both events are independent, you would first find the individual probabilities of each event:
+
+- Probability of rolling a 3 on a six-sided die: $ P(A) = \frac{1}{6} $ (1 favorable outcome out of 6 possible outcomes)
+- Probability of flipping heads on a fair coin: $ P(B) = \frac{1}{2} $ (1 favorable outcome out of 2 possible outcomes)
+
+Then, you can calculate the probability of the conjunction of these events:
+
+$$ \text{Probability} (A \text{ and } B) = \frac{1}{6} \times \frac{1}{2} = \frac{1}{12} $$
+
+So, the probability of rolling a 3 on a fair six-sided die and flipping heads on a fair coin is $ \frac{1}{12} $ or approximately 0.0833 when both events are independent.
+

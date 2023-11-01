@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Science (Theory, Application and Practice)",
+    "section": "",
+    "text": "Preface\nThis is a Course about Data Science. The fundamental are so familar for mathematics student, so they can easily ignore theme.\n\n\nUpdates\n\nAdd Logo and cover (2023/11/01)"
+  },
+  {
+    "objectID": "chapters/Probabity/01Random_Experiment.html",
+    "href": "chapters/Probabity/01Random_Experiment.html",
+    "title": "1  Random Experiment",
+    "section": "",
+    "text": "2 Probability\nProbability is a measure of the likelihood or chance of an event occurring. It quantifies the uncertainty associated with random phenomena and provides a numerical representation of the likelihood of different outcomes.\nIn formal terms, the probability of an event \\(A\\), denoted as \\(P(A)\\), is a number between 0 and 1, where:\nThe sum of the probabilities of all possible outcomes in a sample space (the set of all possible outcomes of a random experiment) is always equal to 1. Mathematically, if \\(S\\) represents the sample space, then for any event \\(A\\) in \\(S\\):\n\\[P(A) + P(\\text{not } A) = 1\\]\nProbability theory provides a framework for analyzing random events and making predictions based on uncertain information. It is widely used in various fields, including statistics, mathematics, science, engineering, economics, and social sciences, to model and analyze uncertain situations and make informed decisions."
+  },
+  {
+    "objectID": "chapters/Probabity/01Random_Experiment.html#uncertainty",
+    "href": "chapters/Probabity/01Random_Experiment.html#uncertainty",
+    "title": "1  Random Experiment",
+    "section": "1.1 Uncertainty",
+    "text": "1.1 Uncertainty\nIn the context of probability and statistics, Uncertainty refers to the lack of perfect knowledge about a situation or an event. It reflects the unpredictability or ambiguity associated with the outcomes of a random experiment or a process. Uncertainty arises due to various factors, including incomplete information, variability, and randomness."
+  },
+  {
+    "objectID": "chapters/Probabity/01Random_Experiment.html#sample-space",
+    "href": "chapters/Probabity/01Random_Experiment.html#sample-space",
+    "title": "1  Random Experiment",
+    "section": "1.2 Sample Space",
+    "text": "1.2 Sample Space\nIn probability theory, the sample space, denoted by \\(S\\) or \\(\\Omega\\), is the set of all possible outcomes of a random experiment or process.\nIt encompasses every conceivable result that could occur, and each outcome in the sample space is considered equally likely.\nFor example, when rolling a fair six-sided die, the sample space consists of the numbers \\(1, 2, 3, 4, 5\\), and \\(6\\), as these are all the possible outcomes.\nIn more complex situations, the sample space can be finite, countably infinite, or uncountably infinite. It is a fundamental concept in probability theory because all probabilities of events are calculated based on the outcomes within the sample space.\n\n1.2.1 Examples of Sample Spaces\n\nRolling a Fair Six-Sided Die:\n\nSample Space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nIn this experiment, rolling a fair six-sided die can result in any of the numbers 1 through 6. Therefore, the sample space consists of these six possible outcomes.\n\nFlipping a Biased Coin:\n\nSample Space: \\(\\{\\text{Heads}, \\text{Tails}\\}\\)\nIf the coin is biased, it might have different probabilities of landing heads or tails. The sample space in this case represents the two possible outcomes: “Heads” or “Tails.”\n\nDrawing a Card from a Standard Deck:\n\nSample Space: \\(\\{\\text{Ace of Hearts}, \\text{2 of Hearts}, \\ldots, \\text{King of Spades}\\}\\) (total 52 cards)\nWhen drawing a single card from a standard deck of 52 playing cards, each card represents a unique outcome. The sample space includes all 52 cards in the deck, such as the “Ace of Hearts,” “2 of Hearts,” and so on up to the “King of Spades.”\n\n\nIn each case, the sample space comprises all possible outcomes of the respective random experiment."
+  },
+  {
+    "objectID": "chapters/Probabity/01Random_Experiment.html#events",
+    "href": "chapters/Probabity/01Random_Experiment.html#events",
+    "title": "1  Random Experiment",
+    "section": "1.3 Events",
+    "text": "1.3 Events\nIn probability theory, an event is a specific outcome or a set of outcomes of a random experiment or process. Events are subsets of the sample space (\\(S\\)) and can be any collection of possible outcomes from the sample space. Events are used to describe the occurrence or non-occurrence of particular results in a given experiment.\nFor example, consider rolling a fair six-sided die. The sample space for this experiment is \\(\\{1, 2, 3, 4, 5, 6\\}\\). Here are a few examples of events:\n\nEvent A: Rolling an even number.\n\nThis event corresponds to the set of outcomes \\(\\{2, 4, 6\\}\\).\n\nEvent B: Rolling a number greater than 4.\n\nThis event corresponds to the set of outcomes \\(\\{5, 6\\}\\).\n\nEvent C: Rolling a number less than or equal to 3.\n\nThis event corresponds to the set of outcomes \\(\\{1, 2, 3\\}\\).\n\n\nEvents can be simple (like rolling a 3) or complex (like rolling an even number and getting a result greater than 2). The probability of an event \\(P(A)\\) is a measure of the likelihood of that event occurring and is calculated based on the number of favorable outcomes for the event divided by the total number of outcomes in the sample space."
+  },
+  {
+    "objectID": "chapters/Probabity/02Sigma_Field.html#sigma-field-sigma-algebra",
+    "href": "chapters/Probabity/02Sigma_Field.html#sigma-field-sigma-algebra",
+    "title": "2  \\(\\sigma\\)-Field in Probibility",
+    "section": "2.1 \\(\\sigma\\)-Field (\\(\\sigma\\)-Algebra)",
+    "text": "2.1 \\(\\sigma\\)-Field (\\(\\sigma\\)-Algebra)\nA \\(\\sigma\\)-field (or \\(\\sigma\\)-algebra) is a collection of subsets of a given set \\(X\\) that satisfies certain properties. In the context of probability theory, \\(\\sigma\\)-fields are crucial because they define which subsets of the sample space have measurable probabilities.\nA collection \\(\\mathcal{F}\\) of subsets of \\(X\\) is a \\(\\sigma\\)-field if it satisfies the following three properties:\n\nClosure under Complement: If \\(A\\) is in \\(\\mathcal{F}\\), then its complement, \\(X \\setminus A\\), is also in \\(\\mathcal{F}\\). In other words, if \\(A \\in \\mathcal{F}\\), then \\(\\overline{A} = X \\setminus A \\in \\mathcal{F}\\).\nClosure under Countable Unions: If \\(A_1, A_2, A_3, \\ldots\\) (a countable sequence) are in \\(\\mathcal{F}\\), then their union \\(\\bigcup_{i=1}^{\\infty} A_i\\) is also in \\(\\mathcal{F}\\). This property ensures that \\(\\sigma\\)-fields are closed under countable unions of sets.\nClosure under Countable Intersections (Optional Property): If \\(A_1, A_2, A_3, \\ldots\\) (a countable sequence) are in \\(\\mathcal{F}\\), then their intersection \\(\\bigcap_{i=1}^{\\infty} A_i\\) is also in \\(\\mathcal{F}\\). This property is sometimes included in the definition of a \\(\\sigma\\)-field, but it can be derived from properties 1 and 2.\n\n\\(\\sigma\\)-fields are used in probability theory to define measurable spaces. In the context of probability, the elements of the \\(\\sigma\\)-field represent events, and any subset of the sample space that belongs to the \\(\\sigma\\)-field can have a probability assigned to it. \\(\\sigma\\)-fields provide a formal and rigorous way to define the structure of events to which probabilities can be assigned in a consistent manner."
+  },
+  {
+    "objectID": "chapters/Probabity/02Sigma_Field.html#examples-of-sigma-field-in-probability-theory",
+    "href": "chapters/Probabity/02Sigma_Field.html#examples-of-sigma-field-in-probability-theory",
+    "title": "2  \\(\\sigma\\)-Field in Probibility",
+    "section": "2.2 Examples of \\(\\sigma\\)-Field in Probability Theory",
+    "text": "2.2 Examples of \\(\\sigma\\)-Field in Probability Theory\n\n2.2.1 Trivial \\(\\sigma\\)-Field\nIn any given probability space, the smallest \\(\\sigma\\)field, denoted as \\(\\{\\emptyset, S\\}\\), contains only the empty set (\\(\\emptyset\\)) and the entire sample space (\\(S\\)). This \\(\\sigma\\)field, called the trivial \\(\\sigma\\)-field, is the smallest possible \\(\\sigma\\)field because it has only two elements.\n\n\n2.2.2 Power Set\nThe largest \\(\\sigma\\)field, also known as the power set of the sample space, denoted as \\(\\mathcal{P}(S)\\), contains all possible subsets of the sample space \\(S\\), including the empty set and \\(S\\). The power set includes every possible combination of outcomes and is the largest \\(\\sigma\\)field because it contains all possible events that can be defined based on the sample space.\n\n\n2.2.3 Tossing a Biased Coin\nImagine tossing a biased coin where the probability of landing heads (\\(H\\)) is \\(0.6\\) and the probability of landing tails (\\(T\\)) is \\(0.4\\).\nThe sample space \\(S\\) for this experiment consists of two outcomes: \\(S = \\{H, T\\}\\).\nA \\(\\sigma\\)-field \\(\\mathcal{F}\\) for this experiment could be defined as follows:\n\nIndividual Outcomes: Both \\(H\\) and \\(T\\) are in \\(\\mathcal{F}\\) because they are subsets of the sample space.\nComplements: If \\(H\\) is in \\(\\mathcal{F}\\), then its complement \\(\\overline{H} = \\{T\\}\\) is also in \\(\\mathcal{F}\\). Similarly, if \\(T\\) is in \\(\\mathcal{F}\\), then its complement \\(\\overline{T} = \\{H\\}\\) is in \\(\\mathcal{F}\\).\nCountable Unions: The sets \\(\\{H\\}\\) and \\(\\{T\\}\\) are in \\(\\mathcal{F}\\), so their union \\(\\{H\\} \\cup \\{T\\} = \\{H, T\\}\\) (the entire sample space) is also in \\(\\mathcal{F}\\).\nCountable Intersections: The sets \\(\\{H\\}\\) and \\(\\{T\\}\\) are in \\(\\mathcal{F}\\), so their intersection \\(\\{H\\} \\cap \\{T\\} = \\{\\}\\) (the empty set) is also in \\(\\mathcal{F}\\).\n\nIn this example, \\(\\mathcal{F}\\) comprises individual outcomes, their complements, and combinations of outcomes through unions and intersections. Any subset of the sample space and its complements, unions, and intersections that are in \\(\\mathcal{F}\\) can have a probability assigned to them, allowing for the calculation of probabilities associated with various\n\n\n2.2.4 Rolling a Fair Six-Sided Die\nLet’s consider a simple experiment of rolling a fair six-sided die. The sample space, denoted as \\(S\\), consists of the possible outcomes: \\(\\{1, 2, 3, 4, 5, 6\\}\\).\nA \\(\\sigma\\)-field \\(\\mathcal{F}\\) for this experiment could be defined as follows:\n\n\\(\\mathcal{F}\\) includes all possible subsets of the sample space \\(S\\). This means \\(\\mathcal{F}\\) contains sets such as \\(\\{1, 2, 3\\}\\), \\(\\{4\\}\\), \\(\\{2, 5, 6\\}\\), and even the empty set \\(\\{\\}\\).\n\\(\\mathcal{F}\\) includes the complements of its subsets. For example, if \\(\\{1, 2, 3\\}\\) is in \\(\\mathcal{F}\\), then its complement \\(\\{4, 5, 6\\}\\) must also be in \\(\\mathcal{F}\\).\n\\(\\mathcal{F}\\) includes countable unions and intersections of its subsets. For instance, if both \\(\\{1, 2\\}\\) and \\(\\{2, 3, 4\\}\\) are in \\(\\mathcal{F}\\), then their union \\(\\{1, 2\\} \\cup \\{2, 3, 4\\} = \\{1, 2, 3, 4\\}\\) and intersection \\(\\{1, 2\\} \\cap \\{2, 3, 4\\} = \\{2\\}\\) must also be in \\(\\mathcal{F}\\).\n\nIn this example, \\(\\mathcal{F}\\) represents all the possible events and combinations of events that we can define based on the outcomes of rolling the die. Any subset of the sample space and its complements, unions, and intersections that are in \\(\\mathcal{F}\\) can have a probability assigned to them. This structure allows us to work with probabilities in a well-defined and consistent manner, making \\(\\sigma\\)-fields a fundamental concept in probability theory."
+  },
+  {
+    "objectID": "chapters/Probabity/03Probability.html#probability-of-a-conjunction-of-two-events",
+    "href": "chapters/Probabity/03Probability.html#probability-of-a-conjunction-of-two-events",
+    "title": "3  Probability",
+    "section": "3.1 Probability of a Conjunction of Two Events",
+    "text": "3.1 Probability of a Conjunction of Two Events\nThe probability of the conjunction (intersection) of two independent events \\(A\\) and \\(B\\) can be calculated using the formula:\n\\[ \\text{Probability} (A \\text{ and } B) = \\text{Probability} (A) \\times \\text{Probability} (B) \\]\nThis formula assumes that events \\(A\\) and \\(B\\) are independent, meaning the occurrence of one event does not affect the occurrence of the other.\nExample: six-sided die\nIf you want to find the probability of rolling a 3 on a fair six-sided die (Event \\(A\\)) and flipping heads on a fair coin (Event \\(B\\)), and both events are independent, you would first find the individual probabilities of each event:\n\nProbability of rolling a 3 on a six-sided die: \\(P(A) = \\frac{1}{6}\\) (1 favorable outcome out of 6 possible outcomes)\nProbability of flipping heads on a fair coin: \\(P(B) = \\frac{1}{2}\\) (1 favorable outcome out of 2 possible outcomes)\n\nThen, you can calculate the probability of the conjunction of these events:\n\\[ \\text{Probability} (A \\text{ and } B) = \\frac{1}{6} \\times \\frac{1}{2} = \\frac{1}{12} \\]\nSo, the probability of rolling a 3 on a fair six-sided die and flipping heads on a fair coin is \\(\\frac{1}{12}\\) or approximately 0.0833 when both events are independent."
+  },
+  {
+    "objectID": "chapters/Probabity/03Probability.html#probability-of-a-union-of-two-events",
+    "href": "chapters/Probabity/03Probability.html#probability-of-a-union-of-two-events",
+    "title": "3  Probability",
+    "section": "3.2 Probability of a Union of Two Events",
+    "text": "3.2 Probability of a Union of Two Events\nThe probability of the union of two events \\(A\\) and \\(B\\) can be calculated using the formula:\n\\[ \\text{Probability} (A \\text{ or } B) = \\text{Probability} (A) + \\text{Probability} (B) - \\text{Probability} (A \\text{ and } B) \\]\nThis formula calculates the probability of either event \\(A\\) or event \\(B\\) occurring, taking into account the possibility that both events could occur simultaneously. The term \\(\\text{Probability} (A \\text{ and } B)\\) represents the probability of the intersection (conjunction) of events \\(A\\) and \\(B\\).\nIf events \\(A\\) and \\(B\\) are mutually exclusive (they cannot occur at the same time), meaning \\(\\text{Probability} (A \\text{ and } B) = 0\\), the formula simplifies to:\n\\[ \\text{Probability} (A \\text{ or } B) = \\text{Probability} (A) + \\text{Probability} (B) \\]\nExample: six-sided die\nFor example, if you want to find the probability of rolling a 3 on a fair six-sided die (Event \\(A\\)) or flipping heads on a fair coin (Event \\(B\\)), and these events are mutually exclusive, and \\(P(A) = \\frac{1}{6}\\) and \\(P(B) = \\frac{1}{2}\\), the probability of the union of these events would be:\n\\[ \\text{Probability} (A \\text{ or } B) = \\frac{1}{6} + \\frac{1}{2} = \\frac{4}{6} = \\frac{2}{3} \\]\nSo, the probability of rolling a 3 on a fair six-sided die or flipping heads on a fair coin (assuming they are mutually exclusive events) is \\(\\frac{2}{3}\\) or approximately 0.6667."
+  },
+  {
+    "objectID": "chapters/Probabity/03Probability.html#conditional-probability",
+    "href": "chapters/Probabity/03Probability.html#conditional-probability",
+    "title": "3  Probability",
+    "section": "3.3 Conditional Probability",
+    "text": "3.3 Conditional Probability\nConditional probability is the probability of an event occurring given that another event has already occurred. It is denoted by \\(P(A | B)\\), which reads as “the probability of event \\(A\\) given event \\(B\\).” The formula for conditional probability is:\n\\[ P(A | B) = \\frac{P(A \\text{ and } B)}{P(B)} \\]\nwhere: - \\(P(A | B)\\) is the conditional probability of event \\(A\\) given event \\(B\\). - \\(P(A \\text{ and } B)\\) is the joint probability of both events \\(A\\) and \\(B\\) occurring. - \\(P(B)\\) is the probability of event \\(B\\) occurring.\nIn words, the conditional probability of \\(A\\) given \\(B\\) is the ratio of the probability of both \\(A\\) and \\(B\\) occurring to the probability that \\(B\\) occurs.\n\n3.3.1 Examples of Conditional Probability\nExample 1: Medical Test Accuracy\nConsider a medical test for a disease, where the test result can be positive (\\(+\\)) or negative (\\(-\\)). Let:\n\n\\(D\\): Person has the disease.\n\\(T\\): Test result is positive.\n\nThe conditional probability here is \\(P(D | T)\\), the probability that a person has the disease given that the test result is positive. The accuracy of the test can be represented as follows:\n\nThe probability of a true positive: \\(P(T | D) = 0.95\\) (the test correctly identifies 95% of those with the disease).\nThe probability of a false positive: \\(P(T | \\neg D) = 0.10\\) (the test incorrectly indicates positive for 10% of those without the disease).\n\nUsing Bayes’ theorem, \\(P(D | T)\\) can be calculated considering both true positives and false positives, making it a key application of conditional probability in real-life scenarios.\nExample 2: Weather Forecast\nConsider two weather events:\n\n\\(S\\): It will be sunny tomorrow.\n\\(R\\): It will rain tomorrow.\n\nLet’s say meteorologists have found that:\n\nThe probability of a sunny day given that it rained today is \\(P(S | R) = 0.20\\).\nThe probability of a rainy day given that it was sunny today is \\(P(R | S) = 0.15\\).\n\nThese probabilities represent how weather conditions are interrelated. For instance, \\(P(S | R) = 0.20\\) means that there is a 20% chance of a sunny day tomorrow if it rains today. These conditional probabilities are crucial for weather forecasting, helping meteorologists make predictions based on current weather conditions.\nExample 2: Six-Sided Die\nConsider the experiment of rolling a fair six-sided die. Let’s define two events:\n\n\\(A\\): The outcome is an even number \\(\\{2, 4, 6\\}\\).\n\\(B\\): The outcome is greater than 3 \\(\\{4, 5, 6\\}\\).\n\nWe want to find \\(P(A | B)\\), which represents the probability that the outcome is an even number given that it is greater than 3.\nFirst, let’s find \\(P(A \\cap B)\\), the probability that the outcome is both an even number and greater than 3. The outcomes in the intersection of \\(A\\) and \\(B\\) are \\(\\{4, 6\\}\\), so:\n\\[ P(A \\cap B) = \\frac{\\text{Number of favorable outcomes}}{\\text{Total number of outcomes}} = \\frac{2}{6} = \\frac{1}{3} \\]\nNext, let’s find \\(P(B)\\), the probability that the outcome is greater than 3. There are 3 outcomes in \\(B\\), so:\n\\[ P(B) = \\frac{\\text{Number of favorable outcomes}}{\\text{Total number of outcomes}} = \\frac{3}{6} = \\frac{1}{2} \\]\nUsing the formula for conditional probability:\n\\[ P(A | B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{3}}{\\frac{1}{2}} = \\frac{2}{3} \\]\nSo, the probability that the outcome is an even number given that it is greater than 3 (\\(P(A | B)\\)) is \\(\\frac{2}{3}\\) or approximately \\(0.6667\\)."
+  },
+  {
+    "objectID": "chapters/Probabity/03Probability.html#independence-in-probability",
+    "href": "chapters/Probabity/03Probability.html#independence-in-probability",
+    "title": "3  Probability",
+    "section": "3.4 Independence in Probability",
+    "text": "3.4 Independence in Probability\nTwo events, \\(A\\) and \\(B\\), are considered independent if the occurrence of one event does not affect the probability of the other event. In other words, \\(A\\) and \\(B\\) are independent if and only if:\n\\[ P(A \\text{ and } B) = P(A) \\times P(B) \\]\nIn this case, the probability of both events \\(A\\) and \\(B\\) occurring is equal to the product of the probabilities of each event occurring individually.\nAlternatively, events \\(A\\) and \\(B\\) are independent if either of the following conditions (equivalent statements) holds:\n\n\\(P(A | B) = P(A)\\) (the probability of \\(A\\) given \\(B\\) is the same as the probability of \\(A\\)).\n\\(P(B | A) = P(B)\\) (the probability of \\(B\\) given \\(A\\) is the same as the probability of \\(B\\)).\n\nIf events \\(A\\) and \\(B\\) are independent, knowing whether \\(A\\) occurs or not provides no information about the occurrence of \\(B\\), and vice versa.\nIndependence is a fundamental concept in probability theory and plays a crucial role in various applications, including statistics, engineering, and decision-making processes. It allows for simpler calculations and modeling of complex systems by assuming that certain events do not influence each other.\n\n3.4.1 Examples of Independence in Probability\nExample 1: Coin Toss and Dice Roll\nConsider the events:\n\n\\(A\\): Tossing a fair coin and getting heads.\n\\(B\\): Rolling a fair six-sided die and getting a 4.\n\nThe outcome of the coin toss does not affect the outcome of the die roll, and vice versa. The probability of getting heads on the coin (\\(P(A) = \\frac{1}{2}\\)) and the probability of rolling a 4 on the die (\\(P(B) = \\frac{1}{6}\\)) are independent events. The joint probability \\(P(A \\text{ and } B) = P(A) \\times P(B) = \\frac{1}{2} \\times \\frac{1}{6} = \\frac{1}{12}\\).\nExample 2: Drawing Cards\nConsider a standard deck of 52 playing cards. Let:\n\n\\(C\\): Drawing a spade from the deck.\n\\(D\\): Drawing a face card (jack, queen, or king) from the deck.\n\nThe event of drawing a spade (\\(P(C) = \\frac{13}{52} = \\frac{1}{4}\\)) is independent of the event of drawing a face card (\\(P(D) = \\frac{12}{52} = \\frac{3}{13}\\)). The joint probability \\(P(C \\text{ and } D) = P(C) \\times P(D) = \\frac{1}{4} \\times \\frac{3}{13} = \\frac{3}{52}\\).\nExample 3: Weather Events\nConsider two weather events:\n\n\\(S\\): It will be sunny tomorrow.\n\\(R\\): It will rain tomorrow.\n\nIf the occurrence of rain tomorrow does not influence the probability of it being sunny tomorrow (and vice versa), events \\(S\\) and \\(R\\) are independent. For instance, if \\(P(S) = 0.7\\) (70% chance of sun) and \\(P(R) = 0.3\\) (30% chance of rain), these events are independent if \\(P(S \\text{ and } R) = P(S) \\times P(R) = 0.7 \\times 0.3 = 0.21\\)."
+  },
+  {
+    "objectID": "chapters/Probabity/summary.html",
+    "href": "chapters/Probabity/summary.html",
+    "title": "4  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "chapters/Statistics/summary.html",
+    "href": "chapters/Statistics/summary.html",
+    "title": "6  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "chapters/Decision Theory/summary.html",
+    "href": "chapters/Decision Theory/summary.html",
+    "title": "8  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "chapters/Information Theory/summary.html",
+    "href": "chapters/Information Theory/summary.html",
+    "title": "10  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "chapters/Linear Algebra/summary.html",
+    "href": "chapters/Linear Algebra/summary.html",
+    "title": "12  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "chapters/Optimization/intro.html#probability-of-a-conjunction-of-two-events",
+    "href": "chapters/Optimization/intro.html#probability-of-a-conjunction-of-two-events",
+    "title": "13  Introduction",
+    "section": "13.1 Probability of a Conjunction of Two Events",
+    "text": "13.1 Probability of a Conjunction of Two Events\nThe probability of the conjunction (intersection) of two independent events \\(A\\) and \\(B\\) can be calculated using the formula:\n\\[ \\text{Probability} (A \\text{ and } B) = \\text{Probability} (A) \\times \\text{Probability} (B) \\]\nThis formula assumes that events $ A $ and $ B $ are independent, meaning the occurrence of one event does not affect the occurrence of the other.\nFor example, if you want to find the probability of rolling a 3 on a fair six-sided die (Event $ A $) and flipping heads on a fair coin (Event $ B $), and both events are independent, you would first find the individual probabilities of each event:\n\nProbability of rolling a 3 on a six-sided die: $ P(A) = $ (1 favorable outcome out of 6 possible outcomes)\nProbability of flipping heads on a fair coin: $ P(B) = $ (1 favorable outcome out of 2 possible outcomes)\n\nThen, you can calculate the probability of the conjunction of these events:\n\\[ \\text{Probability} (A \\text{ and } B) = \\frac{1}{6} \\times \\frac{1}{2} = \\frac{1}{12} \\]\nSo, the probability of rolling a 3 on a fair six-sided die and flipping heads on a fair coin is $ $ or approximately 0.0833 when both events are independent."
+  },
+  {
+    "objectID": "chapters/Optimization/summary.html",
+    "href": "chapters/Optimization/summary.html",
+    "title": "14  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "pages/about.html",
+    "href": "pages/about.html",
+    "title": "About",
+    "section": "",
+    "text": "&lt;video https://www.youtube.com/embed/wo9vZccmqwc &gt; ::: {{}} :::"
+  },
+  {
+    "objectID": "index.html#updates",
+    "href": "index.html#updates",
+    "title": "Data Science (Theory, Application and Practice)",
+    "section": "Updates",
+    "text": "Updates\n\nAdd Logo and cover (2023/11/01)"
+  }
+]

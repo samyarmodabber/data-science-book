@@ -1,0 +1,66 @@
+project:
+  type: book
+  output-dir: _book
+  preview:
+    port: 4200
+    browser: true
+
+book:
+  title: "Data Science (Theory, Application and Practice)"
+  author: "Samyar Modabber"
+  date: "10/31/2023"
+  image: logo.png
+  cover-image: logo.png
+  navbar:
+    search: true
+    logo: logo.png
+    pinned: true
+  sidebar:
+    search: true
+    logo: logo.png
+  page-footer:
+    center: 
+      - text: "About"
+        href: pages/about.qmd
+      - text: "License"
+        href: pages/license.qmd
+  chapters:
+    - index.qmd
+    - part: "Probabity Theory"
+      chapters:
+        - chapters/Probabity/01Random_Experiment.qmd
+        - chapters/Probabity/02Sigma_Field.qmd
+        - chapters/Probabity/03Probability.qmd
+        - chapters/Probabity/summary.qmd
+    - part: "Statistics"
+      chapters:
+        - chapters/Statistics/intro.qmd
+        - chapters/Statistics/summary.qmd
+    - part: "Decision Theory"
+      chapters:
+        - chapters/Decision Theory/intro.qmd
+        - chapters/Decision Theory/summary.qmd
+    - part: "Information Theory"
+      chapters:
+        - chapters/Information Theory/intro.qmd
+        - chapters/Information Theory/summary.qmd
+    - part: "Linear Algebra"
+      chapters:
+        - chapters/Linear Algebra/intro.qmd
+        - chapters/Linear Algebra/summary.qmd
+    - part: "Optimization"
+      chapters:
+        - chapters/Optimization/intro.qmd
+        - chapters/Optimization/summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

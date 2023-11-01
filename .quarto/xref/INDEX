@@ -1,0 +1,74 @@
+{
+  "index.qmd": {
+    "index.html": "c3ef8c9c"
+  },
+  "intro.qmd": {
+    "intro.html": "473ab7a8"
+  },
+  "summary.qmd": {
+    "summary.html": "b99e7483"
+  },
+  "references.qmd": {
+    "references.html": "7c0c06c1"
+  },
+  "chapters/probabity/intro.qmd": {
+    "intro.html": "40ac67cd"
+  },
+  "chapters/probabity/summary.qmd": {
+    "summary.html": "cd792534"
+  },
+  "chapters/Statistics/intro.qmd": {
+    "intro.html": "2b010e73"
+  },
+  "chapters/Statistics/summary.qmd": {
+    "summary.html": "e53c0504"
+  },
+  "chapters/Decision Theory/intro.qmd": {
+    "intro.html": "0ac4e44b"
+  },
+  "chapters/Decision Theory/summary.qmd": {
+    "summary.html": "3649759e"
+  },
+  "chapters/Information Theory/intro.qmd": {
+    "intro.html": "5a2fdeca"
+  },
+  "chapters/Information Theory/summary.qmd": {
+    "summary.html": "674a5765"
+  },
+  "chapters/Linear Algebra/intro.qmd": {
+    "intro.html": "7d8dc188"
+  },
+  "chapters/Linear Algebra/summary.qmd": {
+    "summary.html": "e64c2c05"
+  },
+  "chapters/Optimization/intro.qmd": {
+    "intro.html": "f8be799d"
+  },
+  "chapters/Optimization/summary.qmd": {
+    "summary.html": "3e7f4aa9"
+  },
+  "chapters/Probabity/intro.qmd": {
+    "intro.html": "4ed70c2b"
+  },
+  "chapters/Probabity/summary.qmd": {
+    "summary.html": "8d626a73"
+  },
+  "chapters/Probabity/02sigma_field.qmd": {
+    "02sigma_field.html": "49c767e9"
+  },
+  "chapters/Probabity/02Sigma_Field.qmd": {
+    "02Sigma_Field.html": "753d05d3"
+  },
+  "chapters/Probabity/01Random_Experiment.qmd": {
+    "01Random_Experiment.html": "14011d2e"
+  },
+  "chapters/Probabity/03Probability.qmd": {
+    "03Probability.html": "4eeb6497"
+  },
+  "pages/about.qmd": {
+    "about.html": "1f95b78c"
+  },
+  "pages/license.qmd": {
+    "license.html": "add5ad43"
+  }
+}

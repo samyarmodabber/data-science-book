@@ -1,0 +1,7 @@
+<!-- # Preface {.unnumbered} -->
+
+This is a Course about **Data Science**. The fundamental are so familar for mathematics student, so they can easily ignore theme.
+
+
+## Updates {.unnumbered}
++ Add Logo and cover (2023/11/01)

@@ -1,0 +1,164 @@
+# Probability
+
+We saw that the probability of an event $A$, denoted as $P(A)$, is a number between 0 and 1, where:
+
+- $P(A) = 0$ indicates that the event $A$ is impossible.
+- $P(A) = 1$ indicates that the event $A$ is certain to occur.
+- $0 < P(A) < 1$ indicates that the event $A$ has some probability between impossible and certain.
+
+## Probability of a Conjunction of Two Events
+
+The probability of the conjunction (intersection) of two independent events $A$ and $B$ can be calculated using the formula:
+
+$$ \text{Probability} (A \text{ and } B) = \text{Probability} (A) \times \text{Probability} (B) $$
+
+This formula assumes that events $A$ and $B$ are independent, meaning the occurrence of one event does not affect the occurrence of the other.
+
+**Example: six-sided die**
+
+If you want to find the probability of rolling a 3 on a fair six-sided die (Event $A$) **and** flipping heads on a fair coin (Event $B$), and both events are independent, you would first find the individual probabilities of each event:
+
+- Probability of rolling a 3 on a six-sided die: $P(A) = \frac{1}{6}$ (1 favorable outcome out of 6 possible outcomes)
+- Probability of flipping heads on a fair coin: $P(B) = \frac{1}{2}$ (1 favorable outcome out of 2 possible outcomes)
+
+Then, you can calculate the probability of the conjunction of these events:
+
+$$ \text{Probability} (A \text{ and } B) = \frac{1}{6} \times \frac{1}{2} = \frac{1}{12} $$
+
+So, the probability of rolling a 3 on a fair six-sided die and flipping heads on a fair coin is $\frac{1}{12}$ or approximately 0.0833 when both events are independent.
+
+## Probability of a Union of Two Events
+
+The probability of the union of two events $A$ and $B$ can be calculated using the formula:
+
+$$ \text{Probability} (A \text{ or } B) = \text{Probability} (A) + \text{Probability} (B) - \text{Probability} (A \text{ and } B) $$
+
+This formula calculates the probability of either event $A$ or event $B$ occurring, taking into account the possibility that both events could occur simultaneously. The term $\text{Probability} (A \text{ and } B)$ represents the probability of the intersection (conjunction) of events $A$ and $B$.
+
+If events $A$ and $B$ are mutually exclusive (they cannot occur at the same time), meaning $\text{Probability} (A \text{ and } B) = 0$, the formula simplifies to:
+
+$$ \text{Probability} (A \text{ or } B) = \text{Probability} (A) + \text{Probability} (B) $$
+
+**Example: six-sided die**
+
+For example, if you want to find the probability of rolling a 3 on a fair six-sided die (Event $A$) or flipping heads on a fair coin (Event $B$), and these events are mutually exclusive, and $P(A) = \frac{1}{6}$ and $P(B) = \frac{1}{2}$, the probability of the union of these events would be:
+
+$$ \text{Probability} (A \text{ or } B) = \frac{1}{6} + \frac{1}{2} = \frac{4}{6} = \frac{2}{3} $$
+
+So, the probability of rolling a 3 on a fair six-sided die or flipping heads on a fair coin (assuming they are mutually exclusive events) is $\frac{2}{3}$ or approximately 0.6667.
+
+
+
+## Conditional Probability
+
+Conditional probability is the probability of an event occurring given that another event has already occurred. It is denoted by $P(A | B)$, which reads as "the probability of event $A$ given event $B$." The formula for conditional probability is:
+
+$$ P(A | B) = \frac{P(A \text{ and } B)}{P(B)} $$
+
+where:
+- $P(A | B)$ is the conditional probability of event $A$ given event $B$.
+- $P(A \text{ and } B)$ is the joint probability of both events $A$ and $B$ occurring.
+- $P(B)$ is the probability of event $B$ occurring.
+
+In words, the conditional probability of $A$ given $B$ is the ratio of the probability of both $A$ and $B$ occurring to the probability that $B$ occurs.
+
+### Examples of Conditional Probability
+
+**Example 1: Medical Test Accuracy**
+
+Consider a medical test for a disease, where the test result can be positive ($+$) or negative ($-$). Let:
+
+- $D$: Person has the disease.
+- $T$: Test result is positive.
+
+The conditional probability here is $P(D | T)$, the probability that a person has the disease given that the test result is positive. The accuracy of the test can be represented as follows:
+
+- The probability of a true positive: $P(T | D) = 0.95$ (the test correctly identifies 95% of those with the disease).
+- The probability of a false positive: $P(T | \neg D) = 0.10$ (the test incorrectly indicates positive for 10% of those without the disease).
+
+Using Bayes' theorem, $P(D | T)$ can be calculated considering both true positives and false positives, making it a key application of conditional probability in real-life scenarios.
+
+**Example 2: Weather Forecast**
+
+Consider two weather events:
+
+- $S$: It will be sunny tomorrow.
+- $R$: It will rain tomorrow.
+
+Let's say meteorologists have found that:
+
+- The probability of a sunny day given that it rained today is $P(S | R) = 0.20$.
+- The probability of a rainy day given that it was sunny today is $P(R | S) = 0.15$.
+
+These probabilities represent how weather conditions are interrelated. For instance, $P(S | R) = 0.20$ means that there is a 20% chance of a sunny day tomorrow if it rains today. These conditional probabilities are crucial for weather forecasting, helping meteorologists make predictions based on current weather conditions.
+
+
+**Example 2: Six-Sided Die**
+
+Consider the experiment of rolling a fair six-sided die. Let's define two events:
+
+- $A$: The outcome is an even number $\{2, 4, 6\}$.
+- $B$: The outcome is greater than 3 $\{4, 5, 6\}$.
+
+We want to find $P(A | B)$, which represents the probability that the outcome is an even number given that it is greater than 3.
+
+First, let's find $P(A \cap B)$, the probability that the outcome is both an even number and greater than 3. The outcomes in the intersection of $A$ and $B$ are $\{4, 6\}$, so:
+
+$$ P(A \cap B) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} = \frac{2}{6} = \frac{1}{3} $$
+
+Next, let's find $P(B)$, the probability that the outcome is greater than 3. There are 3 outcomes in $B$, so:
+
+$$ P(B) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} = \frac{3}{6} = \frac{1}{2} $$
+
+Using the formula for conditional probability:
+
+$$ P(A | B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{1}{3}}{\frac{1}{2}} = \frac{2}{3} $$
+
+So, the probability that the outcome is an even number given that it is greater than 3 ($P(A | B)$) is $\frac{2}{3}$ or approximately $0.6667$.
+
+
+## Independence in Probability
+
+Two events, $A$ and $B$, are considered **independent** if the occurrence of one event does not affect the probability of the other event. In other words, $A$ and $B$ are independent if and only if:
+
+$$ P(A \text{ and } B) = P(A) \times P(B) $$
+
+In this case, the probability of both events $A$ and $B$ occurring is equal to the product of the probabilities of each event occurring individually.
+
+Alternatively, events $A$ and $B$ are independent if either of the following conditions (equivalent statements) holds:
+
+1. $P(A | B) = P(A)$ (the probability of $A$ given $B$ is the same as the probability of $A$).
+2. $P(B | A) = P(B)$ (the probability of $B$ given $A$ is the same as the probability of $B$).
+
+If events $A$ and $B$ are independent, knowing whether $A$ occurs or not provides no information about the occurrence of $B$, and vice versa.
+
+Independence is a fundamental concept in probability theory and plays a crucial role in various applications, including statistics, engineering, and decision-making processes. It allows for simpler calculations and modeling of complex systems by assuming that certain events do not influence each other.
+
+### Examples of Independence in Probability
+
+**Example 1: Coin Toss and Dice Roll**
+
+Consider the events:
+
+- $A$: Tossing a fair coin and getting heads.
+- $B$: Rolling a fair six-sided die and getting a 4.
+
+The outcome of the coin toss does not affect the outcome of the die roll, and vice versa. The probability of getting heads on the coin ($P(A) = \frac{1}{2}$) and the probability of rolling a 4 on the die ($P(B) = \frac{1}{6}$) are independent events. The joint probability $P(A \text{ and } B) = P(A) \times P(B) = \frac{1}{2} \times \frac{1}{6} = \frac{1}{12}$.
+
+**Example 2: Drawing Cards**
+
+Consider a standard deck of 52 playing cards. Let:
+
+- $C$: Drawing a spade from the deck.
+- $D$: Drawing a face card (jack, queen, or king) from the deck.
+
+The event of drawing a spade ($P(C) = \frac{13}{52} = \frac{1}{4}$) is independent of the event of drawing a face card ($P(D) = \frac{12}{52} = \frac{3}{13}$). The joint probability $P(C \text{ and } D) = P(C) \times P(D) = \frac{1}{4} \times \frac{3}{13} = \frac{3}{52}$.
+
+**Example 3: Weather Events**
+
+Consider two weather events:
+
+- $S$: It will be sunny tomorrow.
+- $R$: It will rain tomorrow.
+
+If the occurrence of rain tomorrow does not influence the probability of it being sunny tomorrow (and vice versa), events $S$ and $R$ are independent. For instance, if $P(S) = 0.7$ (70% chance of sun) and $P(R) = 0.3$ (30% chance of rain), these events are independent if $P(S \text{ and } R) = P(S) \times P(R) = 0.7 \times 0.3 = 0.21$.
