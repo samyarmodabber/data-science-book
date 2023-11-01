@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Science (Theory, Application and Practice) - 1&nbsp; Random Experiment</title>
+<title>Data Science (Theory, Application and Practice) - 13&nbsp; Introduction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Probabity/02Sigma_Field.html" rel="next">
-<link href="../../index.html" rel="prev">
+<link href="../../chapters/Optimization/summary.html" rel="next">
+<link href="../../chapters/Linear Algebra/summary.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Probabity/01Random_Experiment.html">Probabity Theory</a></li><li class="breadcrumb-item"><a href="../../chapters/Probabity/01Random_Experiment.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Random Experiment</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Optimization/intro.html">Optimization</a></li><li class="breadcrumb-item"><a href="../../chapters/Optimization/intro.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Updates</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Probabity/01Random_Experiment.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Probabity/01Random_Experiment.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Random Experiment</span></span></a>
   </div>
 </li>
@@ -259,7 +259,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Optimization/intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Optimization/intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -287,13 +287,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#uncertainty" id="toc-uncertainty" class="nav-link active" data-scroll-target="#uncertainty"><span class="header-section-number">1.1</span> Uncertainty</a></li>
-  <li><a href="#sample-space" id="toc-sample-space" class="nav-link" data-scroll-target="#sample-space"><span class="header-section-number">1.2</span> Sample Space</a>
-  <ul class="collapse">
-  <li><a href="#examples-of-sample-spaces" id="toc-examples-of-sample-spaces" class="nav-link" data-scroll-target="#examples-of-sample-spaces"><span class="header-section-number">1.2.1</span> Examples of Sample Spaces</a></li>
-  </ul></li>
-  <li><a href="#events" id="toc-events" class="nav-link" data-scroll-target="#events"><span class="header-section-number">1.3</span> Events</a></li>
-  <li><a href="#probability" id="toc-probability" class="nav-link" data-scroll-target="#probability"><span class="header-section-number">2</span> Probability</a></li>
+  <li><a href="#probability-of-a-conjunction-of-two-events" id="toc-probability-of-a-conjunction-of-two-events" class="nav-link active" data-scroll-target="#probability-of-a-conjunction-of-two-events"><span class="header-section-number">13.1</span> Probability of a Conjunction of Two Events</a></li>
   </ul>
 </nav>
     </div>
@@ -302,7 +296,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Random Experiment</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
 </div>
 
 
@@ -317,78 +311,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>A <strong>random experiment</strong> is a process or procedure that leads to one of several possible outcomes. These outcomes are uncertain and can’t be precisely predicted beforehand. Random experiments are fundamental in probability theory and statistics. Here are a few key points about random experiments:</p>
+<section id="probability-of-a-conjunction-of-two-events" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="probability-of-a-conjunction-of-two-events"><span class="header-section-number">13.1</span> Probability of a Conjunction of Two Events</h2>
+<p>The probability of the conjunction (intersection) of two independent events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> can be calculated using the formula:</p>
+<p><span class="math display">\[ \text{Probability} (A \text{ and } B) = \text{Probability} (A) \times \text{Probability} (B) \]</span></p>
+<p>This formula assumes that events $ A $ and $ B $ are independent, meaning the occurrence of one event does not affect the occurrence of the other.</p>
+<p>For example, if you want to find the probability of rolling a 3 on a fair six-sided die (Event $ A $) <strong>and</strong> flipping heads on a fair coin (Event $ B $), and both events are independent, you would first find the individual probabilities of each event:</p>
 <ul>
-<li><p><strong>Uncertainty:</strong> The outcome of a random experiment is uncertain. Even if the experiment is conducted under identical conditions, the outcome may differ each time due to inherent randomness.</p></li>
-<li><p><strong>Sample Space:</strong> A random experiment has a sample space (<span class="math inline">\(S\)</span> or <span class="math inline">\(\Omega\)</span>), which is the set of all possible outcomes of the experiment. Each outcome in the sample space is a distinct possible result of the experiment.</p></li>
-<li><p><strong>Events:</strong> An event is a subset of the sample space. It represents a specific outcome or a combination of outcomes of the random experiment. Events can be simple (involving a single outcome) or compound (involving multiple outcomes).</p></li>
-<li><p><strong>Probability:</strong> Probability theory is used to assign numerical values to events, representing the likelihood of their occurrence. Probabilities range from 0 (impossible event) to 1 (certain event).</p></li>
+<li>Probability of rolling a 3 on a six-sided die: $ P(A) = $ (1 favorable outcome out of 6 possible outcomes)</li>
+<li>Probability of flipping heads on a fair coin: $ P(B) = $ (1 favorable outcome out of 2 possible outcomes)</li>
 </ul>
-<p>Examples of random experiments include rolling a die, tossing a coin, drawing a card from a deck, conducting a survey, or measuring a random variable. Each of these experiments has a set of possible outcomes, forming the sample space, and the specific outcome that occurs is not known in advance, making it a random experiment.</p>
-<section id="uncertainty" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="uncertainty"><span class="header-section-number">1.1</span> Uncertainty</h2>
-<p>In the context of probability and statistics, Uncertainty refers to the lack of perfect knowledge about a situation or an event. It reflects the unpredictability or ambiguity associated with the outcomes of a random experiment or a process. Uncertainty arises due to various factors, including incomplete information, variability, and randomness.</p>
-</section>
-<section id="sample-space" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="sample-space"><span class="header-section-number">1.2</span> Sample Space</h2>
-<p>In probability theory, the <strong>sample space</strong>, denoted by <span class="math inline">\(S\)</span> or <span class="math inline">\(\Omega\)</span>, is the set of all possible outcomes of a random experiment or process.</p>
-<p>It encompasses every conceivable result that could occur, and each outcome in the sample space is considered equally likely.</p>
-<p>For example, when rolling a fair six-sided die, the sample space consists of the numbers <span class="math inline">\(1, 2, 3, 4, 5\)</span>, and <span class="math inline">\(6\)</span>, as these are all the possible outcomes.</p>
-<p>In more complex situations, the sample space can be finite, countably infinite, or uncountably infinite. It is a fundamental concept in probability theory because all probabilities of events are calculated based on the outcomes within the sample space.</p>
-<section id="examples-of-sample-spaces" class="level3" data-number="1.2.1">
-<h3 data-number="1.2.1" class="anchored" data-anchor-id="examples-of-sample-spaces"><span class="header-section-number">1.2.1</span> Examples of Sample Spaces</h3>
-<ol type="1">
-<li><strong>Rolling a Fair Six-Sided Die:</strong>
-<ul>
-<li>Sample Space: <span class="math inline">\(\{1, 2, 3, 4, 5, 6\}\)</span></li>
-<li>In this experiment, rolling a fair six-sided die can result in any of the numbers 1 through 6. Therefore, the sample space consists of these six possible outcomes.</li>
-</ul></li>
-<li><strong>Flipping a Biased Coin:</strong>
-<ul>
-<li>Sample Space: <span class="math inline">\(\{\text{Heads}, \text{Tails}\}\)</span></li>
-<li>If the coin is biased, it might have different probabilities of landing heads or tails. The sample space in this case represents the two possible outcomes: “Heads” or “Tails.”</li>
-</ul></li>
-<li><strong>Drawing a Card from a Standard Deck:</strong>
-<ul>
-<li>Sample Space: <span class="math inline">\(\{\text{Ace of Hearts}, \text{2 of Hearts}, \ldots, \text{King of Spades}\}\)</span> (total 52 cards)</li>
-<li>When drawing a single card from a standard deck of 52 playing cards, each card represents a unique outcome. The sample space includes all 52 cards in the deck, such as the “Ace of Hearts,” “2 of Hearts,” and so on up to the “King of Spades.”</li>
-</ul></li>
-</ol>
-<p>In each case, the sample space comprises all possible outcomes of the respective random experiment.</p>
-</section>
-</section>
-<section id="events" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="events"><span class="header-section-number">1.3</span> Events</h2>
-<p>In probability theory, an <strong>event</strong> is a specific outcome or a set of outcomes of a random experiment or process. Events are subsets of the sample space (<span class="math inline">\(S\)</span>) and can be any collection of possible outcomes from the sample space. Events are used to describe the occurrence or non-occurrence of particular results in a given experiment.</p>
-<p>For example, consider rolling a fair six-sided die. The sample space for this experiment is <span class="math inline">\(\{1, 2, 3, 4, 5, 6\}\)</span>. Here are a few examples of events:</p>
-<ol type="1">
-<li><strong>Event A:</strong> Rolling an even number.
-<ul>
-<li>This event corresponds to the set of outcomes <span class="math inline">\(\{2, 4, 6\}\)</span>.</li>
-</ul></li>
-<li><strong>Event B:</strong> Rolling a number greater than 4.
-<ul>
-<li>This event corresponds to the set of outcomes <span class="math inline">\(\{5, 6\}\)</span>.</li>
-</ul></li>
-<li><strong>Event C:</strong> Rolling a number less than or equal to 3.
-<ul>
-<li>This event corresponds to the set of outcomes <span class="math inline">\(\{1, 2, 3\}\)</span>.</li>
-</ul></li>
-</ol>
-<p>Events can be simple (like rolling a 3) or complex (like rolling an even number and getting a result greater than 2). The probability of an event <span class="math inline">\(P(A)\)</span> is a measure of the likelihood of that event occurring and is calculated based on the number of favorable outcomes for the event divided by the total number of outcomes in the sample space.</p>
-</section>
-<section id="probability" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Probability</h1>
-<p><strong>Probability</strong> is a measure of the likelihood or chance of an event occurring. It quantifies the uncertainty associated with random phenomena and provides a numerical representation of the likelihood of different outcomes.</p>
-<p>In formal terms, the probability of an event <span class="math inline">\(A\)</span>, denoted as <span class="math inline">\(P(A)\)</span>, is a number between 0 and 1, where:</p>
-<ul>
-<li><span class="math inline">\(P(A) = 0\)</span> indicates that the event <span class="math inline">\(A\)</span> is impossible.</li>
-<li><span class="math inline">\(P(A) = 1\)</span> indicates that the event <span class="math inline">\(A\)</span> is certain to occur.</li>
-<li><span class="math inline">\(0 &lt; P(A) &lt; 1\)</span> indicates that the event <span class="math inline">\(A\)</span> has some probability between impossible and certain.</li>
-</ul>
-<p>The sum of the probabilities of all possible outcomes in a sample space (the set of all possible outcomes of a random experiment) is always equal to 1. Mathematically, if <span class="math inline">\(S\)</span> represents the sample space, then for any event <span class="math inline">\(A\)</span> in <span class="math inline">\(S\)</span>:</p>
-<p><span class="math display">\[P(A) + P(\text{not } A) = 1\]</span></p>
-<p>Probability theory provides a framework for analyzing random events and making predictions based on uncertain information. It is widely used in various fields, including statistics, mathematics, science, engineering, economics, and social sciences, to model and analyze uncertain situations and make informed decisions.</p>
+<p>Then, you can calculate the probability of the conjunction of these events:</p>
+<p><span class="math display">\[ \text{Probability} (A \text{ and } B) = \frac{1}{6} \times \frac{1}{2} = \frac{1}{12} \]</span></p>
+<p>So, the probability of rolling a 3 on a fair six-sided die and flipping heads on a fair coin is $ $ or approximately 0.0833 when both events are independent.</p>
 
 
 </section>
@@ -629,13 +564,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      <a href="../../chapters/Linear Algebra/summary.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Summary</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Probabity/02Sigma_Field.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><span class="math inline">\(\sigma\)</span>-Field in Probibility</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Optimization/summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

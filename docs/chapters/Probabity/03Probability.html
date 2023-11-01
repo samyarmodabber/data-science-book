@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Science (Theory, Application and Practice) - 9&nbsp; Introduction</title>
+<title>Data Science (Theory, Application and Practice) - 3&nbsp; Probability</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,14 +24,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/Information Theory/summary.html" rel="next">
-<link href="../../chapters/Decision Theory/summary.html" rel="prev">
+<link href="../../chapters/Probabity/summary.html" rel="next">
+<link href="../../chapters/Probabity/02Sigma_Field.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,6 +73,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../logo.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Data Science (Theory, Application and Practice)</span>
     </a>
@@ -88,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Information Theory/intro.html">Information Theory</a></li><li class="breadcrumb-item"><a href="../../chapters/Information Theory/intro.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/Probabity/01Random_Experiment.html">Probabity Theory</a></li><li class="breadcrumb-item"><a href="../../chapters/Probabity/03Probability.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -101,6 +103,11 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -111,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text">Updates</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -137,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Probabity/03Probability.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/Probabity/03Probability.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability</span></span></a>
   </div>
 </li>
@@ -206,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/Information Theory/intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/Information Theory/intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
@@ -276,14 +283,29 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#probability-of-a-conjunction-of-two-events" id="toc-probability-of-a-conjunction-of-two-events" class="nav-link active" data-scroll-target="#probability-of-a-conjunction-of-two-events"><span class="header-section-number">3.1</span> Probability of a Conjunction of Two Events</a></li>
+  <li><a href="#probability-of-a-union-of-two-events" id="toc-probability-of-a-union-of-two-events" class="nav-link" data-scroll-target="#probability-of-a-union-of-two-events"><span class="header-section-number">3.2</span> Probability of a Union of Two Events</a></li>
+  <li><a href="#conditional-probability" id="toc-conditional-probability" class="nav-link" data-scroll-target="#conditional-probability"><span class="header-section-number">3.3</span> Conditional Probability</a>
+  <ul class="collapse">
+  <li><a href="#examples-of-conditional-probability" id="toc-examples-of-conditional-probability" class="nav-link" data-scroll-target="#examples-of-conditional-probability"><span class="header-section-number">3.3.1</span> Examples of Conditional Probability</a></li>
+  </ul></li>
+  <li><a href="#independence-in-probability" id="toc-independence-in-probability" class="nav-link" data-scroll-target="#independence-in-probability"><span class="header-section-number">3.4</span> Independence in Probability</a>
+  <ul class="collapse">
+  <li><a href="#examples-of-independence-in-probability" id="toc-examples-of-independence-in-probability" class="nav-link" data-scroll-target="#examples-of-independence-in-probability"><span class="header-section-number">3.4.1</span> Examples of Independence in Probability</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Probability</span></h1>
 </div>
 
 
@@ -298,8 +320,126 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>We saw that the probability of an event <span class="math inline">\(A\)</span>, denoted as <span class="math inline">\(P(A)\)</span>, is a number between 0 and 1, where:</p>
+<ul>
+<li><span class="math inline">\(P(A) = 0\)</span> indicates that the event <span class="math inline">\(A\)</span> is impossible.</li>
+<li><span class="math inline">\(P(A) = 1\)</span> indicates that the event <span class="math inline">\(A\)</span> is certain to occur.</li>
+<li><span class="math inline">\(0 &lt; P(A) &lt; 1\)</span> indicates that the event <span class="math inline">\(A\)</span> has some probability between impossible and certain.</li>
+</ul>
+<section id="probability-of-a-conjunction-of-two-events" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="probability-of-a-conjunction-of-two-events"><span class="header-section-number">3.1</span> Probability of a Conjunction of Two Events</h2>
+<p>The probability of the conjunction (intersection) of two independent events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> can be calculated using the formula:</p>
+<p><span class="math display">\[ \text{Probability} (A \text{ and } B) = \text{Probability} (A) \times \text{Probability} (B) \]</span></p>
+<p>This formula assumes that events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent, meaning the occurrence of one event does not affect the occurrence of the other.</p>
+<p><strong>Example: six-sided die</strong></p>
+<p>If you want to find the probability of rolling a 3 on a fair six-sided die (Event <span class="math inline">\(A\)</span>) <strong>and</strong> flipping heads on a fair coin (Event <span class="math inline">\(B\)</span>), and both events are independent, you would first find the individual probabilities of each event:</p>
+<ul>
+<li>Probability of rolling a 3 on a six-sided die: <span class="math inline">\(P(A) = \frac{1}{6}\)</span> (1 favorable outcome out of 6 possible outcomes)</li>
+<li>Probability of flipping heads on a fair coin: <span class="math inline">\(P(B) = \frac{1}{2}\)</span> (1 favorable outcome out of 2 possible outcomes)</li>
+</ul>
+<p>Then, you can calculate the probability of the conjunction of these events:</p>
+<p><span class="math display">\[ \text{Probability} (A \text{ and } B) = \frac{1}{6} \times \frac{1}{2} = \frac{1}{12} \]</span></p>
+<p>So, the probability of rolling a 3 on a fair six-sided die and flipping heads on a fair coin is <span class="math inline">\(\frac{1}{12}\)</span> or approximately 0.0833 when both events are independent.</p>
+</section>
+<section id="probability-of-a-union-of-two-events" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="probability-of-a-union-of-two-events"><span class="header-section-number">3.2</span> Probability of a Union of Two Events</h2>
+<p>The probability of the union of two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> can be calculated using the formula:</p>
+<p><span class="math display">\[ \text{Probability} (A \text{ or } B) = \text{Probability} (A) + \text{Probability} (B) - \text{Probability} (A \text{ and } B) \]</span></p>
+<p>This formula calculates the probability of either event <span class="math inline">\(A\)</span> or event <span class="math inline">\(B\)</span> occurring, taking into account the possibility that both events could occur simultaneously. The term <span class="math inline">\(\text{Probability} (A \text{ and } B)\)</span> represents the probability of the intersection (conjunction) of events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</p>
+<p>If events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are mutually exclusive (they cannot occur at the same time), meaning <span class="math inline">\(\text{Probability} (A \text{ and } B) = 0\)</span>, the formula simplifies to:</p>
+<p><span class="math display">\[ \text{Probability} (A \text{ or } B) = \text{Probability} (A) + \text{Probability} (B) \]</span></p>
+<p><strong>Example: six-sided die</strong></p>
+<p>For example, if you want to find the probability of rolling a 3 on a fair six-sided die (Event <span class="math inline">\(A\)</span>) or flipping heads on a fair coin (Event <span class="math inline">\(B\)</span>), and these events are mutually exclusive, and <span class="math inline">\(P(A) = \frac{1}{6}\)</span> and <span class="math inline">\(P(B) = \frac{1}{2}\)</span>, the probability of the union of these events would be:</p>
+<p><span class="math display">\[ \text{Probability} (A \text{ or } B) = \frac{1}{6} + \frac{1}{2} = \frac{4}{6} = \frac{2}{3} \]</span></p>
+<p>So, the probability of rolling a 3 on a fair six-sided die or flipping heads on a fair coin (assuming they are mutually exclusive events) is <span class="math inline">\(\frac{2}{3}\)</span> or approximately 0.6667.</p>
+</section>
+<section id="conditional-probability" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="conditional-probability"><span class="header-section-number">3.3</span> Conditional Probability</h2>
+<p>Conditional probability is the probability of an event occurring given that another event has already occurred. It is denoted by <span class="math inline">\(P(A | B)\)</span>, which reads as “the probability of event <span class="math inline">\(A\)</span> given event <span class="math inline">\(B\)</span>.” The formula for conditional probability is:</p>
+<p><span class="math display">\[ P(A | B) = \frac{P(A \text{ and } B)}{P(B)} \]</span></p>
+<p>where: - <span class="math inline">\(P(A | B)\)</span> is the conditional probability of event <span class="math inline">\(A\)</span> given event <span class="math inline">\(B\)</span>. - <span class="math inline">\(P(A \text{ and } B)\)</span> is the joint probability of both events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> occurring. - <span class="math inline">\(P(B)\)</span> is the probability of event <span class="math inline">\(B\)</span> occurring.</p>
+<p>In words, the conditional probability of <span class="math inline">\(A\)</span> given <span class="math inline">\(B\)</span> is the ratio of the probability of both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> occurring to the probability that <span class="math inline">\(B\)</span> occurs.</p>
+<section id="examples-of-conditional-probability" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="examples-of-conditional-probability"><span class="header-section-number">3.3.1</span> Examples of Conditional Probability</h3>
+<p><strong>Example 1: Medical Test Accuracy</strong></p>
+<p>Consider a medical test for a disease, where the test result can be positive (<span class="math inline">\(+\)</span>) or negative (<span class="math inline">\(-\)</span>). Let:</p>
+<ul>
+<li><span class="math inline">\(D\)</span>: Person has the disease.</li>
+<li><span class="math inline">\(T\)</span>: Test result is positive.</li>
+</ul>
+<p>The conditional probability here is <span class="math inline">\(P(D | T)\)</span>, the probability that a person has the disease given that the test result is positive. The accuracy of the test can be represented as follows:</p>
+<ul>
+<li>The probability of a true positive: <span class="math inline">\(P(T | D) = 0.95\)</span> (the test correctly identifies 95% of those with the disease).</li>
+<li>The probability of a false positive: <span class="math inline">\(P(T | \neg D) = 0.10\)</span> (the test incorrectly indicates positive for 10% of those without the disease).</li>
+</ul>
+<p>Using Bayes’ theorem, <span class="math inline">\(P(D | T)\)</span> can be calculated considering both true positives and false positives, making it a key application of conditional probability in real-life scenarios.</p>
+<p><strong>Example 2: Weather Forecast</strong></p>
+<p>Consider two weather events:</p>
+<ul>
+<li><span class="math inline">\(S\)</span>: It will be sunny tomorrow.</li>
+<li><span class="math inline">\(R\)</span>: It will rain tomorrow.</li>
+</ul>
+<p>Let’s say meteorologists have found that:</p>
+<ul>
+<li>The probability of a sunny day given that it rained today is <span class="math inline">\(P(S | R) = 0.20\)</span>.</li>
+<li>The probability of a rainy day given that it was sunny today is <span class="math inline">\(P(R | S) = 0.15\)</span>.</li>
+</ul>
+<p>These probabilities represent how weather conditions are interrelated. For instance, <span class="math inline">\(P(S | R) = 0.20\)</span> means that there is a 20% chance of a sunny day tomorrow if it rains today. These conditional probabilities are crucial for weather forecasting, helping meteorologists make predictions based on current weather conditions.</p>
+<p><strong>Example 2: Six-Sided Die</strong></p>
+<p>Consider the experiment of rolling a fair six-sided die. Let’s define two events:</p>
+<ul>
+<li><span class="math inline">\(A\)</span>: The outcome is an even number <span class="math inline">\(\{2, 4, 6\}\)</span>.</li>
+<li><span class="math inline">\(B\)</span>: The outcome is greater than 3 <span class="math inline">\(\{4, 5, 6\}\)</span>.</li>
+</ul>
+<p>We want to find <span class="math inline">\(P(A | B)\)</span>, which represents the probability that the outcome is an even number given that it is greater than 3.</p>
+<p>First, let’s find <span class="math inline">\(P(A \cap B)\)</span>, the probability that the outcome is both an even number and greater than 3. The outcomes in the intersection of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are <span class="math inline">\(\{4, 6\}\)</span>, so:</p>
+<p><span class="math display">\[ P(A \cap B) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} = \frac{2}{6} = \frac{1}{3} \]</span></p>
+<p>Next, let’s find <span class="math inline">\(P(B)\)</span>, the probability that the outcome is greater than 3. There are 3 outcomes in <span class="math inline">\(B\)</span>, so:</p>
+<p><span class="math display">\[ P(B) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} = \frac{3}{6} = \frac{1}{2} \]</span></p>
+<p>Using the formula for conditional probability:</p>
+<p><span class="math display">\[ P(A | B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{1}{3}}{\frac{1}{2}} = \frac{2}{3} \]</span></p>
+<p>So, the probability that the outcome is an even number given that it is greater than 3 (<span class="math inline">\(P(A | B)\)</span>) is <span class="math inline">\(\frac{2}{3}\)</span> or approximately <span class="math inline">\(0.6667\)</span>.</p>
+</section>
+</section>
+<section id="independence-in-probability" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="independence-in-probability"><span class="header-section-number">3.4</span> Independence in Probability</h2>
+<p>Two events, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, are considered <strong>independent</strong> if the occurrence of one event does not affect the probability of the other event. In other words, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent if and only if:</p>
+<p><span class="math display">\[ P(A \text{ and } B) = P(A) \times P(B) \]</span></p>
+<p>In this case, the probability of both events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> occurring is equal to the product of the probabilities of each event occurring individually.</p>
+<p>Alternatively, events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent if either of the following conditions (equivalent statements) holds:</p>
+<ol type="1">
+<li><span class="math inline">\(P(A | B) = P(A)\)</span> (the probability of <span class="math inline">\(A\)</span> given <span class="math inline">\(B\)</span> is the same as the probability of <span class="math inline">\(A\)</span>).</li>
+<li><span class="math inline">\(P(B | A) = P(B)\)</span> (the probability of <span class="math inline">\(B\)</span> given <span class="math inline">\(A\)</span> is the same as the probability of <span class="math inline">\(B\)</span>).</li>
+</ol>
+<p>If events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent, knowing whether <span class="math inline">\(A\)</span> occurs or not provides no information about the occurrence of <span class="math inline">\(B\)</span>, and vice versa.</p>
+<p>Independence is a fundamental concept in probability theory and plays a crucial role in various applications, including statistics, engineering, and decision-making processes. It allows for simpler calculations and modeling of complex systems by assuming that certain events do not influence each other.</p>
+<section id="examples-of-independence-in-probability" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="examples-of-independence-in-probability"><span class="header-section-number">3.4.1</span> Examples of Independence in Probability</h3>
+<p><strong>Example 1: Coin Toss and Dice Roll</strong></p>
+<p>Consider the events:</p>
+<ul>
+<li><span class="math inline">\(A\)</span>: Tossing a fair coin and getting heads.</li>
+<li><span class="math inline">\(B\)</span>: Rolling a fair six-sided die and getting a 4.</li>
+</ul>
+<p>The outcome of the coin toss does not affect the outcome of the die roll, and vice versa. The probability of getting heads on the coin (<span class="math inline">\(P(A) = \frac{1}{2}\)</span>) and the probability of rolling a 4 on the die (<span class="math inline">\(P(B) = \frac{1}{6}\)</span>) are independent events. The joint probability <span class="math inline">\(P(A \text{ and } B) = P(A) \times P(B) = \frac{1}{2} \times \frac{1}{6} = \frac{1}{12}\)</span>.</p>
+<p><strong>Example 2: Drawing Cards</strong></p>
+<p>Consider a standard deck of 52 playing cards. Let:</p>
+<ul>
+<li><span class="math inline">\(C\)</span>: Drawing a spade from the deck.</li>
+<li><span class="math inline">\(D\)</span>: Drawing a face card (jack, queen, or king) from the deck.</li>
+</ul>
+<p>The event of drawing a spade (<span class="math inline">\(P(C) = \frac{13}{52} = \frac{1}{4}\)</span>) is independent of the event of drawing a face card (<span class="math inline">\(P(D) = \frac{12}{52} = \frac{3}{13}\)</span>). The joint probability <span class="math inline">\(P(C \text{ and } D) = P(C) \times P(D) = \frac{1}{4} \times \frac{3}{13} = \frac{3}{52}\)</span>.</p>
+<p><strong>Example 3: Weather Events</strong></p>
+<p>Consider two weather events:</p>
+<ul>
+<li><span class="math inline">\(S\)</span>: It will be sunny tomorrow.</li>
+<li><span class="math inline">\(R\)</span>: It will rain tomorrow.</li>
+</ul>
+<p>If the occurrence of rain tomorrow does not influence the probability of it being sunny tomorrow (and vice versa), events <span class="math inline">\(S\)</span> and <span class="math inline">\(R\)</span> are independent. For instance, if <span class="math inline">\(P(S) = 0.7\)</span> (70% chance of sun) and <span class="math inline">\(P(R) = 0.3\)</span> (30% chance of rain), these events are independent if <span class="math inline">\(P(S \text{ and } R) = P(S) \times P(R) = 0.7 \times 0.3 = 0.21\)</span>.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -537,17 +677,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/Decision Theory/summary.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span>
+      <a href="../../chapters/Probabity/02Sigma_Field.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><span class="math inline">\(\sigma\)</span>-Field in Probibility</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/Information Theory/summary.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/Probabity/summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../pages/about.html">About</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../pages/license.html">License</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

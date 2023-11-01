@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#updates",
+    "href": "index.html#updates",
     "title": "Data Science (Theory, Application and Practice)",
-    "section": "",
-    "text": "Preface\nThis is a Course about Data Science. The fundamental are so familar for mathematics student, so they can easily ignore theme.\n\n\nUpdates\n\nAdd Logo and cover (2023/11/01)"
+    "section": "Updates",
+    "text": "Updates\n\nAdd Logo and cover (2023/11/01)"
   },
   {
     "objectID": "chapters/Probabity/01Random_Experiment.html",
@@ -124,19 +124,5 @@
     "title": "14  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "pages/about.html",
-    "href": "pages/about.html",
-    "title": "About",
-    "section": "",
-    "text": "&lt;video https://www.youtube.com/embed/wo9vZccmqwc &gt; ::: {{}} :::"
-  },
-  {
-    "objectID": "index.html#updates",
-    "href": "index.html#updates",
-    "title": "Data Science (Theory, Application and Practice)",
-    "section": "Updates",
-    "text": "Updates\n\nAdd Logo and cover (2023/11/01)"
   }
 ]
